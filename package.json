@@ -4,7 +4,8 @@
   "description": "Voting app (client), implemented from tutorial",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --compilers js:babel-core/register --require ./test/test-helper.js 'test/**/*@(.js|.jsx)'",
+    "test:watch": "npm run test -- --watch"
   },
   "keywords": [],
   "author": "Eric Schmitt <ericschmitt1@gmail.com>",
